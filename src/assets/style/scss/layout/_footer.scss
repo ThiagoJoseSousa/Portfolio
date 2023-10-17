@@ -1,0 +1,40 @@
+@use '../util' as u;
+
+.footer__wrapper{
+    display: flex;
+    justify-content: space-between;
+
+    padding: 0 var(--p-margin-x);
+    ul{
+        padding: 0;
+    }
+
+    @include u.breakpoint(medium){
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    @include u.breakpoint(small){
+        font-size: 0.9rem;
+    }
+}
+
+.footer__logo{
+    display: flex;
+    text-transform: uppercase;
+}
+
+.footer__list{
+    margin-bottom: var(--p-margin-bottom);
+    ul{
+        li{
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+.footer__rights{
+    background: var(--theme-contrast);
+    display: flex;
+    padding:10px 0;
+}

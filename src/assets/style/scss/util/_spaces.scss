@@ -1,0 +1,15 @@
+:root{
+    --section-margin: clamp(2rem, 75vw, 8rem); 
+    --nav-height:4.6875rem;
+    --nav-padding:1.875rem;
+    --link-padding:1rem;
+    --section-margin-bottom:clamp(5.625rem,9vw,11.25rem);
+    --p-margin-bottom:clamp(2.8125rem,4.5vw,5.625rem);
+    --p-margin-x:1.25rem;
+    --margin-right-p:2rem;
+    --margin-medium:2em;
+}
+
+.margin-medium{
+    margin-bottom: var(--margin-medium);
+}

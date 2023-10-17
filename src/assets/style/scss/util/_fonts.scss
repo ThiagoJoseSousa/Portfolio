@@ -1,0 +1,25 @@
+:root{
+    --font-description-size:clamp(1.125rem, 1.225vw, 1.625rem); 
+    --logo-font-size: clamp(1.5rem, 1.8vw, 2.5rem);
+    --content-h2-size:clamp(1.875rem, 2vw, 2.4rem);
+    --parallax-h1-size:clamp(2rem,5vw,5rem);
+    --medium-title-size:clamp(1.4rem, 1.5vw, 1.8rem); 
+
+}
+
+.text__h2{
+    
+    font-size: var(--content-h2-size);
+}
+
+.medium-title{
+    font-size:var(--medium-title-size);
+}
+
+.text__p{
+    font-size:var(--font-description-size);
+    margin-bottom:var(--p-margin-bottom);
+    &:last-child{
+        margin-bottom:0;
+    }
+}
