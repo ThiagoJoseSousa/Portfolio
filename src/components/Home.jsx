@@ -6,8 +6,6 @@ import code from '../assets/style/image/code.svg'
 import computer from '../assets/style/image/computer.png'
 import diamond from '../assets/style/image/diamond.png'
 
-import Footer from "./Footer";
-
 export default function Home (){
     const upAnimaRefs= useRef([]);
     const leftAnimaRefs=useRef([]);
@@ -84,10 +82,10 @@ export default function Home (){
 
     return <main className="main">
             <section className="parallax-module parallax parallax-1">
-                <h1 ref={(el) => (downAnimaRefs.current[0]= el)} className="zero-opa">Web Developer</h1>
+                <h1 ref={(el) => (rightAnimaRefs.current[0]= el)} className="zero-opa">Web Developer</h1>
             </section>
             <section className="parallax-module content">
-                <div className="text__wrapper" ref={(el) => (upAnimaRefs.current[0]= el)}>
+                <div className="text__wrapper" ref={(el) => (downAnimaRefs.current[0]= el)}>
                     <h2 className="text__h2">Web Developer</h2>
                     <p className="text__p">
                         Hi, my name is Thiago, and I am a Front-End Developer. I have experience using a Backend as a Service provider as the <strong>Firebase</strong> one to build complete websites.
@@ -108,7 +106,7 @@ export default function Home (){
             </section>
 
             <section className="third-section-wrapper">
-                <div className="third-section text__wrapper text__wrapper--grid" ref={(el) => (rightAnimaRefs.current[0]= el)}>
+                <div className="third-section text__wrapper text__wrapper--grid" ref={(el) => (rightAnimaRefs.current[1]= el)}>
                     <span className="text__p">What I can do.</span>
                     <h2 className="text__h2">Skills</h2>
                     <div className="skills">
@@ -143,7 +141,7 @@ export default function Home (){
                             I truly believe in the power of compassionate communication to bridge gaps and bring diverse ideas together in harmony. When working alongside designers and team members, I strive to foster an environment where dialogue is open, respectful, and constructive.
                             </p>
                         </div>
-                        <div className="skills__portfolio"  ref={(el) => (rightAnimaRefs.current[1]= el)}>
+                        <div className="skills__portfolio"  ref={(el) => (rightAnimaRefs.current[2]= el)}>
                             <div className="portfolio__wrapper">
                                 <h3 className="margin-medium medium-title">See my projects</h3>
                                 <p>Discover my Front-end development experiences on websites and applications.</p>
@@ -157,7 +155,7 @@ export default function Home (){
             </section>
 
             <section className="fourth-section">    
-                <div className="fourth-section-wrapper" ref={(el) => (downAnimaRefs.current[1]= el)}>
+                <div className="fourth-section-wrapper" ref={(el) => (upAnimaRefs.current[1]= el)}>
                     <span className="text__p">How I built this site.</span>
                     <h1 className="text__h2">Explore my portfolio.</h1>
                     <div className="page-info">
@@ -172,37 +170,5 @@ export default function Home (){
 
                 </div>
             </section>
-
-            <Footer />
-            {/* <section className="parallax-module parallax parallax-2" ref={(el) => (upAnimaRefs.current[1]= el)}>
-                <h1>HOW I BUILT THIS PAGE</h1>
-            </section>
-            <section className="parallax-module content">
-                <div className="container">
-                    <h2>Qualquer texto aqui..</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, reprehenderit sint et quos odit eligendi repellat obcaecati rerum. Nihil natus impedit, quis eligendi illum quaerat a at dolore accusantium ratione!
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia asperiores vel praesentium animi officia. Cupiditate quo vitae alias illo inventore, recusandae impedit blanditiis perspiciatis unde fuga tempore ducimus incidunt rem.
-                    </p>
-                </div>
-            </section>
-
-            <section className="parallax-module parallax parallax-3" ref={(el) => (upAnimaRefs.current[2]= el)}>
-                <h1>Thiago josé</h1>
-            </section>
-            <section className="parallax-module content">
-                <div className="container">
-                    <h2>Qualquer texto aqui..</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, reprehenderit sint et quos odit eligendi repellat obcaecati rerum. Nihil natus impedit, quis eligendi illum quaerat a at dolore accusantium ratione!
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia asperiores vel praesentium animi officia. Cupiditate quo vitae alias illo inventore, recusandae impedit blanditiis perspiciatis unde fuga tempore ducimus incidunt rem.
-                    </p>
-                </div>
-            </section> */}
-
         </main>
 }

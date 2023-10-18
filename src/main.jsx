@@ -2,18 +2,14 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 
 import {RouterProvider, createBrowserRouter} from 'react-router-dom'
-import Navbar from './components/Navbar'
-import Intro from './components/Intro'
-
-import Home from './components/Home'
+import HomePage from './pages/HomePage'
+import TimelineRoute from './pages/TimelineRoute'
 
 const router = createBrowserRouter([
   {path:"/",
-  element:<>
-  <Navbar />
-  {/* <Intro /> */}
-  <Home />
-  </>}
+  element: <HomePage />},
+  {path:"/Timeline",
+  element: <TimelineRoute />}
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(

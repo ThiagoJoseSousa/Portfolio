@@ -142,6 +142,7 @@
     }
 }
 
+
 .lineAnimation{
     text-decoration: none;
     color: var(--theme);
@@ -162,7 +163,7 @@
         transform-origin: left;
         transition:transform 0.2s ease-in-out;
     }
-    &:hover::after, &:focus::after{
+    &:hover::after, &:focus::after, &.active::after{
         transform: scaleX(1);
     }
 }

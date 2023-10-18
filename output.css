@@ -10,7 +10,7 @@ html, * {
 body {
   margin: 0;
   padding: 0;
-  background-color: hsl(0, 0%, 11%);
+  background-color: var(--theme);
   color: hsl(0, 0%, 100%);
   font-family: sans-serif;
   overflow-x: hidden;
@@ -107,7 +107,8 @@ button:hover {
 .scrolled {
   opacity: 0;
   transform: translateY(20px);
-  animation: scroll-in 2s forwards;
+  animation: scroll-in 3s forwards;
+  animation-timing-function: cubic-bezier(0, 0.94, 0, 0.94);
 }
 
 @keyframes scroll-in {
@@ -123,7 +124,8 @@ button:hover {
 .left {
   opacity: 0;
   transform: translateX(-20px);
-  animation: left-in 2s forwards;
+  animation: left-in 3s forwards;
+  animation-timing-function: cubic-bezier(0, 0.94, 0, 0.94);
 }
 
 @keyframes left-in {
@@ -139,7 +141,8 @@ button:hover {
 .right {
   opacity: 0;
   transform: translateX(20px);
-  animation: right-in 2s forwards;
+  animation: right-in 3s forwards;
+  animation-timing-function: cubic-bezier(0, 0.94, 0, 0.94);
 }
 
 @keyframes right-in {
@@ -155,7 +158,8 @@ button:hover {
 .down {
   opacity: 0;
   transform: translateY(-20px);
-  animation: down-in 2s forwards;
+  animation: down-in 3s forwards;
+  animation-timing-function: cubic-bezier(0, 0.94, 0, 0.94);
 }
 
 @keyframes down-in {
@@ -334,7 +338,7 @@ button:hover {
   transform-origin: left;
   transition: transform 0.2s ease-in-out;
 }
-.lineAnimation:hover::after, .lineAnimation:focus::after {
+.lineAnimation:hover::after, .lineAnimation:focus::after, .lineAnimation.active::after {
   transform: scaleX(1);
 }
 

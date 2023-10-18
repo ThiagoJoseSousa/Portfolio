@@ -5,7 +5,8 @@
 .scrolled{
     opacity: 0;
     transform: translateY(20px);
-    animation: scroll-in 2s forwards;
+    animation: scroll-in 3s forwards;
+    animation-timing-function: cubic-bezier(0,.94,0,.94);
 }
 
 @keyframes scroll-in{
@@ -22,7 +23,8 @@
 .left{
     opacity: 0;
     transform: translateX(-20px);
-    animation: left-in 2s forwards;
+    animation: left-in 3s forwards;
+    animation-timing-function: cubic-bezier(0,.94,0,.94);
 }
 
 @keyframes left-in{
@@ -39,7 +41,8 @@
 .right{
     opacity: 0;
     transform: translateX(20px);
-    animation: right-in 2s forwards;
+    animation: right-in 3s forwards;
+    animation-timing-function: cubic-bezier(0,.94,0,.94);
 }
 
 @keyframes right-in{
@@ -56,7 +59,8 @@
 .down {
     opacity: 0;
     transform: translateY(-20px);
-    animation: down-in 2s forwards;
+    animation: down-in 3s forwards;
+    animation-timing-function: cubic-bezier(0,.94,0,.94);
 }
 
 @keyframes down-in{

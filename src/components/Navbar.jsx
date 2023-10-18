@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import logo from "../assets/t.png"
 import { useEffect, useRef, useState } from "react";
 
@@ -33,12 +33,12 @@ export default function Navbar(){
     return (
         <nav ref={navRef} className="nav">
             <header className="nav__header">
-                <Link to={'../'} className="logo">
+                <NavLink to={'../'} className="logo">
                 <img src={logo} alt="logo" className="logo__img"/>
                 <span className="logo__name">
                 Thiago José
                 </span>
-                </Link>
+                </NavLink>
             </header>
             <ul className="nav__ul">
                 <LiItem name={"Timeline"} />
@@ -59,9 +59,9 @@ export default function Navbar(){
 }
 
 function LiItem({name}){
-    return <li><Link to={name} className="lineAnimation" >{name}</Link></li>
+    return <li><NavLink to={'../' + name} className="lineAnimation" >{name}</NavLink></li>
 }
 
 function MobileLiItem({name}){
-    return <li className="hamburger__li"><Link to={name} className="hamburger__a lineAnimation lineAnimation-mobile" >{name}</Link></li>
+    return <li className="hamburger__li"><NavLink to={name} className="hamburger__a lineAnimation lineAnimation-mobile" >{name}</NavLink></li>
 }

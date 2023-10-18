@@ -10,7 +10,7 @@ html, * {
 body{
     margin: 0;
     padding: 0;
-    background-color:hsl(0%, 0%, 11%);
+    background-color:var(--theme);
     color: hsl(0%, 0%, 100%);
     font-family:sans-serif;
     overflow-x: hidden;
