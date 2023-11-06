@@ -1,5 +1,5 @@
 import logo from '../assets/t.png'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 export default function Footer (){
     return <footer className="footer">
@@ -14,9 +14,9 @@ export default function Footer (){
         <span>
         <h3 className="medium-title">Navigation</h3>
             <ul>
-                <li><Link>Timeline</Link></li>
-                <li><Link>Projects</Link></li>
-                <li><Link>About</Link></li>
+                <li><NavLink to={'../'}>Home</NavLink></li>
+                <li><NavLink to={'../' + 'Timeline'}>Timeline</NavLink></li>
+                <li><NavLink to={'../' + 'Projects'}>Projects</NavLink></li>
             </ul>
         </span>
 

@@ -6,6 +6,8 @@ import code from '../assets/style/image/code.svg'
 import computer from '../assets/style/image/computer.png'
 import diamond from '../assets/style/image/diamond.png'
 
+import {useNavigate} from "react-router-dom";
+
 export default function Home (){
     const upAnimaRefs= useRef([]);
     const leftAnimaRefs=useRef([]);
@@ -80,15 +82,21 @@ export default function Home (){
     }
     ,[])
 
+    let navigate = useNavigate();
+    const routeChange = () => {
+        let url='Projects'
+        navigate(url);
+    }
+
     return <main className="main">
             <section className="parallax-module parallax parallax-1">
-                <h1 ref={(el) => (rightAnimaRefs.current[0]= el)} className="zero-opa">Web Developer</h1>
+                <h1 ref={(el) => (downAnimaRefs.current[0]= el)} className="zero-opa">Web developer</h1>
             </section>
             <section className="parallax-module content">
-                <div className="text__wrapper" ref={(el) => (downAnimaRefs.current[0]= el)}>
-                    <h2 className="text__h2">Web Developer</h2>
+                <div className="text__wrapper" ref={(el) => (rightAnimaRefs.current[0]= el)}>
+                    <h2 className="text__h2">Web developer</h2>
                     <p className="text__p">
-                        Hi, my name is Thiago, and I am a Front-End Developer. I have experience using a Backend as a Service provider as the <strong>Firebase</strong> one to build complete websites.
+                        Hey, I'm Thiago, a 20-year-old and a Front-end Developer. I have experience using a <strong>Backend as a Service</strong> provider as the <strong>Firebase</strong> one to build complete websites.
                         
                     </p>
                     <p className="text__p">
@@ -100,8 +108,8 @@ export default function Home (){
             <section className="second-section-wrapper">
                 <div className="second-section text__wrapper" ref={(el) => (leftAnimaRefs.current[0]= el)}>
                     <h2 className="text__h2">Why Front-End?</h2>
-                    <p className="text__p">I chose the Front End because it is <strong>complex</strong>. The combination of SEO, design, and logic allows me to learn a wide part of the internet.</p>
-                    <p className="text__p">I also love the idea of ​​being able to create responsive websites, apps, and interfaces that can <strong>help users</strong> spend less time with their tasks.</p>
+                    <p className="text__p">I chose the <strong>Front End</strong> because it is <b>complex</b>. The combination of SEO, design, and logic allows me to learn a wide part of the internet.</p>
+                    <p className="text__p">I also love the idea of ​​being able to create <strong>responsive websites, apps, and interfaces</strong> that can <b>help users</b> spend less time with their tasks.</p>
                 </div>
             </section>
 
@@ -128,9 +136,9 @@ export default function Home (){
 
                         <div className="skills__webapis">
                         <img src={code} className="skills__icon" alt="</>" title="Code"/>
-                        <h3 className="medium-title">Web APIs</h3>
+                        <h3 className="medium-title">Maintainable</h3>
                             <p>
-                            APIs allow developers to access and utilize functions of another software system or service without needing to understand its code, facilitating the development of creative applications that build on existing services, thereby saving time and resources.
+                            Maintainable code and Web API knowledge are essential for developers. They save time and improve software quality by making code easy to modify, reuse, and interact with third-party services. By combining these skills, you can create functional and maintainable software.
                             </p>
                         </div>
 
@@ -146,7 +154,7 @@ export default function Home (){
                                 <h3 className="margin-medium medium-title">See my projects</h3>
                                 <p>Discover my Front-end development experiences on websites and applications.</p>
                                 <p>You can also download them and have access to their entire source code.</p>
-                                <button className="portfolio__button">See experience</button>
+                                <button className="portfolio__button" onClick={routeChange}>See experience</button>
                             </div>
                         </div>
 

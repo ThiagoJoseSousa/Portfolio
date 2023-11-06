@@ -14,6 +14,9 @@
         align-items: center;
         text-align: center;
     }
+    a{
+        font-size:var(--small-font-size);
+    }
     @include u.breakpoint(small){
         font-size: 0.9rem;
     }
@@ -36,5 +39,6 @@
 .footer__rights{
     background: var(--theme-contrast);
     display: flex;
+    font-size: var(--small-font-size);
     padding:10px 0;
 }

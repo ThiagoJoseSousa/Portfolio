@@ -52,14 +52,16 @@ section.parallax-module{
             }
     }
     
-    // &.parallax-2{
-    //     background-image:url("https://images.alphacoders.com/543/543102.jpg");
-    // }
+     &.parallax-2{
+        background-color: rgb(18, 12, 18);
+         background-image:url("./src/assets/style/image/journey.jpg");
+         margin-bottom: 0;
+     }
     
-    // &.parallax-3{
-    //     background-image:url("https://images.alphacoders.com/543/543102.jpg");
-    
-    // }
+     &.parallax-3{
+        background-color: #de9040;
+         background-image:url("./src/assets/style/image/market.webp");
+     }
 }
 .text__wrapper{
     font-size:var(--font-description-size) ;
@@ -86,11 +88,10 @@ section.parallax-module{
         }
     }
     p{
-        text-align:justify;
+        text-align:left;
         margin-bottom: 0;
         margin-left: var(--margin-right-p);
         @include u.breakpoint(large){
-            text-align: center;
             margin-bottom: var(--p-margin-bottom);
             margin-left: 0;
         } 
@@ -182,12 +183,12 @@ section.parallax-module{
 
 
 .text__wrapper--grid{
-    text-align: justify;
+    text-align: left;
 }
 
 .page-info{
     display: flex;
-    text-align: justify;
+    text-align: left;
     @include u.breakpoint(large) {
         flex-direction: column;
     }

@@ -7,8 +7,10 @@
     padding: var(--nav-padding);
     position: fixed;
     width: 100%;
-    transition: all 0.25s;
+    transition: all 0.5s;
+    transition-timing-function: ease;
     text-transform: uppercase;
+    top: 0;
     z-index: 51;
 
     &__header,&__ul{
@@ -175,4 +177,24 @@
     &:hover{
         background-color: var(--darker-brand);
     }
+}
+
+#scroll-btn{
+    display: none;
+  position: fixed;
+  bottom: 1.25rem; 
+  right: 1.5rem;
+  z-index: 99; 
+  border: none; 
+  outline: none; 
+  background-color: var(--theme-contrast); 
+  color: var(--theme); 
+  cursor: pointer; 
+  padding: 1rem; 
+  border-radius: 1rem; 
+  font-size: 1.1rem; 
+}
+
+#scroll-btn:hover{
+    background-color: #555;
 }

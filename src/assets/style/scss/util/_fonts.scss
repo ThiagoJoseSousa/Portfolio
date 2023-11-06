@@ -1,9 +1,17 @@
+@use './breakpoints' as u;
+
 :root{
     --font-description-size:clamp(1.125rem, 1.225vw, 1.625rem); 
     --logo-font-size: clamp(1.5rem, 1.8vw, 2.5rem);
     --content-h2-size:clamp(1.875rem, 2vw, 2.4rem);
     --parallax-h1-size:clamp(2rem,5vw,5rem);
     --medium-title-size:clamp(1.4rem, 1.5vw, 1.8rem); 
+
+    --small-font-size:clamp(1rem, 1.225vw, 1.3rem);
+
+    --card-text-position:18.75rem;
+
+    --highlight-font:clamp(3.125rem, 5vw, 9.375rem);
 
 }
 
@@ -21,5 +29,21 @@
     margin-bottom:var(--p-margin-bottom);
     &:last-child{
         margin-bottom:0;
+    }
+}
+
+.h2-experiments{
+    font-size: 3.2rem;
+    padding-left: var(--page-edge-distance);
+    @include u.breakpoint(small){
+        font-size: 2rem;
+    }
+}
+
+.semi-title{
+    font-size: 1.3rem;
+    padding-left: var(--page-edge-distance);
+    @include u.breakpoint(small){
+        font-size: 1.2rem;
     }
 }

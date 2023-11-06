@@ -4,12 +4,39 @@
     --nav-padding:1.875rem;
     --link-padding:1rem;
     --section-margin-bottom:clamp(5.625rem,9vw,11.25rem);
-    --p-margin-bottom:clamp(2.8125rem,4.5vw,5.625rem);
+    --p-margin-bottom:clamp(2.8125rem,3vw,5.625rem);
     --p-margin-x:1.25rem;
     --margin-right-p:2rem;
     --margin-medium:2em;
+
+    --circle-border-size:0.5em;
+    --circle-fill-size:2.5em;
+
+    --timeline-bottom-margin:2.5rem;
+    
+    --page-edge-distance:2rem;
+
+    --dark-overlay:to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 40%, #000 100%;
+
+    --card-middle:4.0625rem;
 }
 
 .margin-medium{
     margin-bottom: var(--margin-medium);
 }
+
+.auto-left{
+    margin-left: auto;
+    @media (max-width:767px) {
+        margin: 0;
+    }
+}
+
+.auto-right{
+    margin-right: auto;
+}
+
+.flex{
+    display: flex;
+}
+
