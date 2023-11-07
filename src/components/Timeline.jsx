@@ -55,7 +55,7 @@ return <>
                 <div className="timeline-item__content">
                     <h3 className='medium-title'>practice</h3>
                     <p className='text__p'>
-                    After completing the <strong>Javascript</strong> course, I set a goal to solve every beginner algorithm on Leetcode. I also started attempting to clone the <a href=''>SpaceX website</a>, which required <strong>advanced CSS</strong> techniques.
+                    After completing the <strong>Javascript</strong> course, I set a goal to solve every beginner algorithm on Leetcode. I also started attempting to clone the <a href='https://spacex-uiclone.netlify.app/'>SpaceX website</a>, which required <strong>advanced CSS</strong> techniques.
                     </p>
                 </div>
             </div>
@@ -73,7 +73,7 @@ return <>
                 <div className="timeline-item__content">
                     <h3 className='medium-title'>Clean code</h3>
                     <p className='text__p'>
-                    To enhance my coding readability and speed, I immersed myself in <strong>Clean Code, Design Patterns, and OOP</strong> while working on the <a href=''>Explosive Chess Game</a>.
+                    To enhance my coding readability and speed, I immersed myself in <strong>Clean Code, Design Patterns, and OOP</strong> while working on the <a href='https://animated-trifle-db85d1.netlify.app/'>Explosive Chess Game</a>.
                     </p>
                 </div>
             </div>
@@ -91,7 +91,7 @@ return <>
                 <div className="timeline-item__content">
                     <h3 className='medium-title'>ReactJS</h3>
                     <p className='text__p'>
-                    Upon completing the <strong>React</strong> course offered by Ziroll, I was eager to further explore the framework's capabilities. As a result, I took on the challenge of replicating a <a href=''>renowned e-commerce website</a> while integrating key <strong>API</strong> features such as login and user-generated content.
+                    Upon completing the <strong>React</strong> course offered by Ziroll, I was eager to further explore the framework's capabilities. As a result, I took on the challenge of replicating a <a href='https://nft-ecommerce-clone.netlify.app/'>renowned e-commerce website</a> while integrating key <strong>API</strong> features such as login and user-generated content.
                     </p>
                 </div>
             </div>
