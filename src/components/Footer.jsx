@@ -25,7 +25,6 @@ export default function Footer (){
     <span>
         <h3 className="medium-title">Contact</h3>
         <ul>
-
             <li><a href="mailto:imigrationstudy@gmail.com">imigrationstudy@gmail.com</a></li>
             <li><a href="tel:+5511942553889">+55 11 94255 3889</a></li>
             <li><a href="https://maps.app.goo.gl/3VgGCDrZUiDSuqjs8">Carapicuíba, São Paulo - Brazil</a></li>

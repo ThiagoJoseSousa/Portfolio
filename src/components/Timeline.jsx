@@ -55,7 +55,7 @@ return <>
                 <div className="timeline-item__content">
                     <h3 className='medium-title'>practice</h3>
                     <p className='text__p'>
-                    After completing the <strong>Javascript</strong> course, I set a goal to solve every beginner algorithm on Leetcode. I also started attempting to clone the <a href='https://spacex-uiclone.netlify.app/'>SpaceX website</a>, which required <strong>advanced CSS</strong> techniques.
+                    After completing the <strong>Javascript</strong> course, I set a goal to solve every beginner algorithm on Leetcode. I also started attempting to <a href='https://spacex-uiclone.netlify.app/'>clone</a> the SpaceX website, which required <strong>advanced CSS</strong> techniques.
                     </p>
                 </div>
             </div>
