@@ -8,4 +8,4 @@ To improve my CSS management, I used SASS for the first time, which turned out t
 By using SASS, I learned about folder structure, partials, nesting, variables, and mixins. Although I didn't delve into SASS functions, I plan to explore them in the future. 
 
 ## How to use
-Overall, the app offers a good user experience. Feel free to [explore]('thiagojosesousa.netlify.app/') it!
+Overall, the app offers a good user experience. Feel free to [explore]('https://thiagojosesousa.netlify.app/') it!
