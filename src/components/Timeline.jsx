@@ -100,7 +100,7 @@ return <>
             <div className='arrow'></div>
              <div className='timeline-item__content timeline-item--end'>
                 <h3 className='medium-title'>Improving as a Front-End developer</h3>
-                <p className='text__p'>Currently mastering SASS for cleaner CSS.</p>
+                <p className='text__p'>Currently learning Redux.</p>
             </div> 
         </div>
     </section>
